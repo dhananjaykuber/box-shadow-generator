@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Box Shadow CSS Generator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Box Shadow: <strong>{CSS Generator}</strong></h2>
+        <div class="wrapper">
+            <div class="controls-wrapper">
+                <div class="control">
+                    <h4>Horizontal Shadow</h4>
+                    <h5>The horizontal offset of the shadow.</h5>
+                    <input type="range" name="h-shadow" min="-200" max="200" data-size="px">
+                </div>
+                <div class="control">
+                    <h4>Vertical Shadow</h4>
+                    <h5>The vertical offset of the shadow.</h5>
+                    <input type="range" name="v-shadow" min="-200" max="200" data-size="px">
+                </div>
+                <div class="control">
+                    <h4>Blur Radius</h4>
+                    <h5>The higher number of the blur radius, more blurred the shadow will be.</h5>
+                    <input type="range" name="b-radius" min="0" max="400" data-size="px">
+                </div>
+                <div class="control">
+                    <h4>Spread Radius</h4>
+                    <h5>The spread radius increases and decreases the size of the shadow.</h5>
+                    <input type="range" name="s-radius" min="-200" max="200" data-size="px">
+                </div>
+                <div class="control">
+                    <h4>Shadow Color</h4>
+                    <h5>The color of the shadow.</h5>
+                    <input type="color" name="s-color" data-size="">
+                </div>
+                <div class="control">
+                    <h4>Box Color</h4>
+                    <h5>The color of the box.</h5>
+                    <input type="color" name="box-color" data-size="">
+                </div>
+                <!-- <div class="control">
+                    <h4>Shadow Opacity</h4>
+                    <h5>The shadow color opacity.</h5>
+                    <input type="color" name="--s-color-opacity" data-size="">
+                </div> -->
+            </div>
+            <div class="box-wrapper">
+                <div class="box"></div>
+            </div>
+        </div>
+        <div class="css-wrapper">
+            <div class="css">
+                <i class="fas fa-clipboard clipboard"></i>
+                <h3>CSS</h3>
+                <input type="text" class="text-input" readonly>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
