@@ -85,3 +85,28 @@ input[type="text"] {
   font-family: "Poppins";
   margin: 5px 10px;
 }
+
+@media only screen and (max-width: 950px) {
+  .wrapper {
+    flex-direction: column;
+  }
+  .box {
+    margin-top: 50px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  input[type="text"] {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .controls-wrapper {
+    margin-left: 10px;
+  }
+  .box {
+    height: 300px;
+    width: 300px;
+  }
+}
